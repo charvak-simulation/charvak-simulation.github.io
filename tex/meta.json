@@ -1,0 +1,37 @@
+{
+ "dems": {
+  "cop30": {
+   "name": "Copernicus DEM GLO-30 (DSM)",
+   "zmin": 199.40036010742188,
+   "zmax": 4310.00830078125
+  },
+  "fabdem": {
+   "name": "FABDEM v1.2 (bare-earth, Bristol/Fathom)",
+   "zmin": 199.5742645263672,
+   "zmax": 4309.87255859375
+  },
+  "aw3d30": {
+   "name": "ALOS World 3D 30 m v3.2 (JAXA, DSM)",
+   "zmin": 193.31802368164062,
+   "zmax": 4322.0009765625
+  },
+  "nasadem": {
+   "name": "NASADEM (SRTM reprocessed, 2020)",
+   "zmin": 197.48934936523438,
+   "zmax": 4300.88720703125
+  },
+  "srtm": {
+   "name": "SRTM GL1 v3 30 m (NASA)",
+   "zmin": 195.466552734375,
+   "zmax": 4314.29052734375
+  }
+ },
+ "grid": {
+  "width": 2824,
+  "height": 2483,
+  "cell": 90,
+  "x0": 415260.0,
+  "y0": 4707240.0,
+  "crs": "EPSG:32642"
+ }
+}
