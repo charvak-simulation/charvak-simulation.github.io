@@ -41,18 +41,18 @@
 
 | Metric | English Specification | Русская спецификация | O'zbekcha tavsifi | Value / Значение |
 | :--- | :--- | :--- | :--- | :--- |
-| **$V_{total}$** | Total Storage Capacity | Полный объем водохранилища | To'liq suv sig'imi | **$2,006\text{ million m}^3$ ($2.006\text{ km}^3$)** |
-| **$V_{useful}$** | Active / Usable Storage | Полезный объем | Foydali sig'imi | **$1,580\text{ million m}^3$ ($1.580\text{ km}^3$)** |
-| **$V_{dead}$** | Dead Storage Capacity | Мертвый объем | O'lik sig'imi | **$426\text{ million m}^3$ ($0.426\text{ km}^3$)** |
-| **$A_{surface}$** | Water Surface Area (at FSL) | Площадь зеркала при НПУ | Suv yuzasi maydoni (NPUda) | **$40.1\text{ km}^2$ (37.0 – 40.1 $\text{km}^2$)** |
-| **FSL / НПУ** | Normal Pool Level | Нормальный подпорный уровень (НПУ) | Normal podpor sathi (NPU) | **$890.0\text{ m}$ a.s.l.** (Балтийская система) |
-| **MWL / ФПУ** | Maximum Surcharge Level | Форсированный подпорный уровень (ФПУ) | Forsirlangan podpor sathi (FPU) | **$893.0\text{ m}$ a.s.l.** |
-| **MOL / УМО** | Minimum Operating Level (Dead pool) | Уровень мертвого объема (УМО) | O'lik hajm sathi (UMO) | **$835.0\text{ m}$ a.s.l.** |
-| **$H_{max}$** | Maximum Water Depth | Максимальная глубина у плотины | Maksimal suv chuqurligi | **$148.0\text{ m}$** |
-| **$H_{avg}$** | Average Depth | Средняя глубина водоема | O'rtacha suv chuqurligi | **$36.0 - 50.0\text{ m}$** |
-| **$L_{res}$** | Maximum Reservoir Length | Длина водохранилища по заливам | Suv ombori uzunligi | **$\approx 22.0\text{ km}$** (Pskem arm) |
-| **$W_{max}$** | Maximum Width | Наибольшая ширина | Maksimal kengligi | **$3.0 - 5.0\text{ km}$** |
-| **Coastline** | Shoreline Length | Длина береговой линии | Qirg'oq chizig'i uzunligi | **$\approx 100\text{ km}$** |
+| **V_total** | Total Storage Capacity | Полный объем водохранилища | To'liq suv sig'imi | **2,006 million m³ (2.006 km³)** |
+| **V_useful** | Active / Usable Storage | Полезный объем | Foydali sig'imi | **1,580 million m³ (1.580 km³)** |
+| **V_dead** | Dead Storage Capacity | Мертвый объем | O'lik sig'imi | **426 million m³ (0.426 km³)** |
+| **A_surface** | Water Surface Area (at FSL) | Площадь зеркала при НПУ | Suv yuzasi maydoni (NPUda) | **40.1 km² (37.0 – 40.1 km²)** |
+| **FSL / НПУ** | Normal Pool Level | Нормальный подпорный уровень (НПУ) | Normal podpor sathi (NPU) | **890.0 m a.s.l.** (Балтийская система) |
+| **MWL / ФПУ** | Maximum Surcharge Level | Форсированный подпорный уровень (ФПУ) | Forsirlangan podpor sathi (FPU) | **893.0 m a.s.l.** |
+| **MOL / УМО** | Minimum Operating Level (Dead pool) | Уровень мертвого объема (УМО) | O'lik hajm sathi (UMO) | **835.0 m a.s.l.** |
+| **H_max** | Maximum Water Depth | Максимальная глубина у плотины | Maksimal suv chuqurligi | **148.0 m** |
+| **H_avg** | Average Depth | Средняя глубина водоема | O'rtacha suv chuqurligi | **36.0 – 50.0 m** |
+| **L_res** | Maximum Reservoir Length | Длина водохранилища по заливам | Suv ombori uzunligi | **~22.0 km** (Pskem arm) |
+| **W_max** | Maximum Width | Наибольшая ширина | Maksimal kengligi | **3.0 – 5.0 km** |
+| **Coastline** | Shoreline Length | Длина береговой линии | Qirg'oq chizig'i uzunligi | **~100 km** |
 
 ---
 
@@ -61,16 +61,16 @@
 | Feature | English Description | Описание (Русский) | Tavsif (O'zbekcha) | Dimension / Значение |
 | :--- | :--- | :--- | :--- | :--- |
 | **Dam Type** | Rockfill embankment with central clay/loam impervious core | Каменно-набросная (каменно-земляная) с центральным суглинистым ядром | Tosh-tuproqli (markaziy gil/qumoq yadroli) to'g'on | **Rockfill / Embankment** |
-| **Structural Height** | Maximum structural dam height | Максимальная высота плотины | To'g'onning umumiy balandligi | **$168.0\text{ m}$** |
-| **Crest Length** | Length along the dam crest | Длина плотины по гребню | Tizma bo'yicha uzunligi | **$768.0\text{ m}$** |
-| **Crest Width** | Width of the roadway crest | Ширина плотины по гребню | Tizma kengligi | **$12.0\text{ m}$** |
-| **Base Width** | Maximum width at foundation level | Ширина плотины по основанию | Asosi bo'yicha maksimal kengligi | **$\approx 750 - 800\text{ m}$** |
-| **Crest Elevation** | Absolute crest altitude | Отметка гребня плотины | To'g'on tizma mutlaq balandligi | **$900.0\text{ m}$ a.s.l.** |
-| **Freeboard** | Crest height above Normal Pool Level | Превышение гребня над НПУ | Tizmaning NPUdan balandligi | **$10.0\text{ m}$** (7.0 m above surcharge) |
-| **Embankment Volume** | Total body fill volume | Общий объем тела плотины | To'g'on tanasi umumiy hajmi | **$18.9\text{ million m}^3$** |
+| **Structural Height** | Maximum structural dam height | Максимальная высота плотины | To'g'onning umumiy balandligi | **168.0 m** |
+| **Crest Length** | Length along the dam crest | Длина плотины по гребню | Tizma bo'yicha uzunligi | **768.0 m** |
+| **Crest Width** | Width of the roadway crest | Ширина плотины по гребню | Tizma kengligi | **12.0 m** |
+| **Base Width** | Maximum width at foundation level | Ширина плотины по основанию | Asosi bo'yicha maksimal kengligi | **~750 – 800 m** |
+| **Crest Elevation** | Absolute crest altitude | Отметка гребня плотины | To'g'on tizma mutlaq balandligi | **900.0 m a.s.l.** |
+| **Freeboard** | Crest height above Normal Pool Level | Превышение гребня над НПУ | Tizmaning NPUdan balandligi | **10.0 m** (7.0 m above surcharge) |
+| **Embankment Volume** | Total body fill volume | Общий объем тела плотины | To'g'on tanasi umumiy hajmi | **18.9 million m³** |
 | **Upstream Slope** | Upstream slope ratio | Заложение верхового откоса | Yuqori nishablik koeffitsiyenti | **1:2.0 to 1:2.25** |
 | **Downstream Slope**| Downstream slope ratio (with berms) | Заложение низового откоса (с бермами) | Quyi nishablik koeffitsiyenti | **1:1.75 to 1:2.0** |
-| **Seepage Cutoff** | Grout curtain into bedrock | Глубокая противофильтрационная цементационная завеса | Filtrlashga qarshi chuqur sementatsiya pardasi | **Depth up to $100\text{ m}$ into rock** |
+| **Seepage Cutoff** | Grout curtain into bedrock | Глубокая противофильтрационная цементационная завеса | Filtrlashga qarshi chuqur sementatsiya pardasi | **Depth up to 100 m into rock** |
 
 ---
 
@@ -98,9 +98,9 @@ The Charvak dam is equipped with two independent hydraulic safety discharge syst
 
 | Discharge Facility | Details & Type | Пропускная способность | Vazifasi va o'tkazuvchanligi |
 | :--- | :--- | :--- | :--- |
-| **Surface Morning-Glory Spillway** | Drop shaft funnel (diameter $32\text{ m}$) discharging through a $10\text{ m}$ diameter rock tunnel. | $\approx 1,200 - 1,400\text{ m}^3/\text{s}$ | Toshqin suvlarini avtomatik yuqori qatlamdan xavfsiz o'tkazish |
-| **Deep Bottom Outlets** | Two independent diversion/outlet tunnels equipped with high-pressure radial gates. | $\approx 800 - 1,000\text{ m}^3/\text{s}$ | Suv omborini to'liq bo'shatish va doimiy texnologik oqim |
-| **Combined Maximum Discharge** | Total flood evacuation capacity | **$\approx 2,400\text{ m}^3/\text{s}$** | Jami maksimal suv o'tkazish quvvati |
+| **Surface Morning-Glory Spillway** | Drop shaft funnel (diameter 32 m) discharging through a 10 m diameter rock tunnel. | ~1,200 – 1,400 m³/s | Toshqin suvlarini avtomatik yuqori qatlamdan xavfsiz o'tkazish |
+| **Deep Bottom Outlets** | Two independent diversion/outlet tunnels equipped with high-pressure radial gates. | ~800 – 1,000 m³/s | Suv omborini to'liq bo'shatish va doimiy texnologik oqim |
+| **Combined Maximum Discharge** | Total flood evacuation capacity | **~2,400 m³/s** | Jami maksimal suv o'tkazish quvvati |
 
 ---
 
@@ -108,11 +108,11 @@ The Charvak dam is equipped with two independent hydraulic safety discharge syst
 
 | Characteristic | Specification (English) | Значение (Русский) | Ko'rsatkich (O'zbekcha) |
 | :--- | :--- | :--- | :--- |
-| **Installed Capacity** | **$666.0\text{ MW}$** (Modernized from original 600 MW) | **$666,0\text{ МВт}$** (модернизирована с 600 МВт) | **$666.0\text{ MVt}$** (dastlabki 600 MVtdan oshirilgan) |
-| **Number of Units** | 4 hydro-turbines $\times 166.5\text{ MW}$ | 4 радиально-осевых гидроагрегата по 166,5 МВт | 4 ta radial-o'qli gidroagregat (har biri 166.5 MVt) |
+| **Installed Capacity** | **666.0 MW** (Modernized from original 600 MW) | **666,0 МВт** (модернизирована с 600 МВт) | **666.0 MVt** (dastlabki 600 MVtdan oshirilgan) |
+| **Number of Units** | 4 hydro-turbines × 166.5 MW | 4 радиально-осевых гидроагрегата по 166,5 МВт | 4 ta radial-o'qli gidroagregat (har biri 166.5 MVt) |
 | **Turbine Type** | Francis (radial-axial) hydraulic turbines | Радиально-осевые турбины Френсиса | Frensis (radial-o'qli) gidroturbinalari |
-| **Design Head ($H_{net}$)** | $110.0 - 148.0\text{ m}$ (Rated head: $\approx 120\text{ m}$) | Расчетный напор: $110 - 148\text{ м}$ | Loyihaviy bosim: $110 - 148\text{ m}$ |
-| **Average Generation** | $\approx 2.0 - 2.2\text{ billion kWh / year}$ | $\approx 2,0 - 2,2\text{ млрд кВт·ч / год}$ | $\approx 2.0 - 2.2\text{ mlrd kVt·soat / yil}$ |
+| **Design Head (H_net)** | 110.0 – 148.0 m (Rated head: ~120 m) | Расчетный напор: 110 – 148 м | Loyihaviy bosim: 110 – 148 m |
+| **Average Generation** | ~2.0 – 2.2 billion kWh / year | ~2,0 – 2,2 млрд кВт·ч / год | ~2.0 – 2.2 mlrd kVt·soat / yil |
 | **Power Grid Significance** | Provides ~20% of Uzbekistan's hydropower and acts as key frequency regulator for the national grid | Вырабатывает около 20% всей гидрогенерации Узбекистана, ключевой регулятор пиковых нагрузок | O'zbekiston GESlari jami elektr energiyasining 20% ga yaqinini ta'minlaydi, energetika tizimi regulyatori |
 
 ---
@@ -120,21 +120,21 @@ The Charvak dam is equipped with two independent hydraulic safety discharge syst
 ## 6. Basin Hydrology & Downstream Cascade
 
 ### Inflow Basin Characteristics
-* **Drainage Catchment Area ($F_{cat}$):** $\approx 11,250 - 11,300\text{ km}^2$.
-* **Mean Multi-Year Annual Inflow:** $\approx 7.0 - 7.5\text{ km}^3/\text{year}$ (Mean discharge: $Q_{avg} \approx 220 - 240\text{ m}^3/\text{s}$).
-* **Peak Spring/Summer Flood Discharge:** In May–July during high snow and glacier melt, inflow reaches $1,800 - 2,400\text{ m}^3/\text{s}$.
+* **Drainage Catchment Area (F_cat):** ~11,250 – 11,300 km².
+* **Mean Multi-Year Annual Inflow:** ~7.0 – 7.5 km³/year (Mean discharge: Q_avg ~220 – 240 m³/s).
+* **Peak Spring/Summer Flood Discharge:** In May–July during high snow and glacier melt, inflow reaches 1,800 – 2,400 m³/s.
 * **Main Tributaries:**
-  1. **Pskem River (Пскем):** Enters from northeast; accounts for $\approx 45\%$ of total inflow.
-  2. **Chatkal River (Чаткал):** Enters from southeast; accounts for $\approx 40\%$ of total inflow.
-  3. **Koksu River (Коксу):** Enters from east; accounts for $\approx 10\%$ of inflow.
+  1. **Pskem River (Пскем):** Enters from northeast; accounts for ~45% of total inflow.
+  2. **Chatkal River (Чаткал):** Enters from southeast; accounts for ~40% of total inflow.
+  3. **Koksu River (Коксу):** Enters from east; accounts for ~10% of inflow.
   4. **Ugam River (Угам):** Confluences into Chirchik immediately downstream of the Charvak dam.
 
 ### Chirchik River Hydro Cascade (Downstream)
 Below the Charvak dam, the water flows through the Chirchik Cascade:
-1. **Khojikent HPP & Reservoir (Ходжикентская ГЭС):** Dam height $35\text{ m}$, storage $0.03\text{ km}^3$, capacity $165\text{ MW}$ ($\approx 8\text{ km}$ downstream).
-2. **Gazalkent HPP & Diversion (Газалкентская ГЭС):** Capacity $120\text{ MW}$ ($\approx 16\text{ km}$ downstream).
+1. **Khojikent HPP & Reservoir (Ходжикентская ГЭС):** Dam height 35 m, storage 0.03 km³, capacity 165 MW (~8 km downstream).
+2. **Gazalkent HPP & Diversion (Газалкентская ГЭС):** Capacity 120 MW (~16 km downstream).
 3. **Bozsu / Chirchik Cascade:** 19 smaller run-of-river plants distributing water through irrigation canals and into the Syr Darya.
-4. **Shardara Reservoir (Шардаринское водохранилище, Kazakhstan):** Full capacity $5.2 - 5.7\text{ km}^3$ on the Syr Darya River, receiving the Chirchik discharge at Chinaz.
+4. **Shardara Reservoir (Шардаринское водохранилище, Kazakhstan):** Full capacity 5.2 – 5.7 km³ on the Syr Darya River, receiving the Chirchik discharge at Chinaz.
 
 ---
 
@@ -157,11 +157,11 @@ Below the Charvak dam, the water flows through the Chirchik Cascade:
 
 * **April 26, 1966:** The catastrophic Tashkent earthquake accelerated industrial and energy development initiatives in Soviet Uzbekistan, prompting prioritized funding for the Charvak hydro complex.
 * **1963–1964:** Preliminary groundworks, construction of diversion tunnels, and diversion of the Chirchik River flow.
-* **1966–1970:** Construction of the main $168\text{ m}$ rockfill embankment.
+* **1966–1970:** Construction of the main 168 m rockfill embankment.
 * **1970:** Flooding of the reservoir basin and commissioning of the first hydroelectric turbine unit.
-* **1972:** Commercial operation commenced at full design capacity ($600\text{ MW}$).
+* **1972:** Commercial operation commenced at full design capacity (600 MW).
 * **Archaeological Impact:** Before inundation, the Uzbek Academy of Sciences Institute of Archaeology recorded and excavated over 150 historical monuments, ancient caves (Obi-Rakhmat), burial mounds, petroglyphs, and medieval settlements across the basin.
-* **2014–2019:** Modernization program upgrading turbine runners, increasing plant output from $600\text{ MW}$ to $666\text{ MW}$.
+* **2014–2019:** Modernization program upgrading turbine runners, increasing plant output from 600 MW to 666 MW.
 
 ---
 
@@ -171,14 +171,14 @@ For hydrodynamic, flood-routing, and civil defense simulations (such as [charvak
 
 | Modeling Variable | Symbol | Applied Value | Model Source / Basis |
 | :--- | :--- | :--- | :--- |
-| **Reservoir Storage at Breach** | $V_0$ | $2.00 \times 10^9\text{ m}^3$ ($2.0\text{ km}^3$) | Maximum operating full pool |
-| **Hydraulic Head at Dam** | $h_w$ | $148.0\text{ m}$ | Normal Pool Level to canyon bed |
+| **Reservoir Storage at Breach** | V0 | 2.00 × 10⁹ m³ (2.0 km³) | Maximum operating full pool |
+| **Hydraulic Head at Dam** | hw | 148.0 m | Normal Pool Level to canyon bed |
 | **Breach Formation Mechanism** | — | Froehlich (2008) formulation | USACE / FEMA standard for rockfill core dams |
-| **Peak Breach Outflow** | $Q_p$ | **$182,013\text{ m}^3/\text{s}$** | Froehlich empirical peak discharge |
-| **Breach Development Time** | $t_f$ | **$1.6\text{ hours}$** | Embankment erosive piping and collapse |
-| **Average Crest Inundation Width** | $B_{avg}$ | $\approx 280\text{ m}$ | Upper-to-mid trapezoidal breach geometry |
+| **Peak Breach Outflow** | Qp | **182,013 m³/s** | Froehlich empirical peak discharge |
+| **Breach Development Time** | tf | **1.6 hours** | Embankment erosive piping and collapse |
+| **Average Crest Inundation Width** | B_avg | ~280 m | Upper-to-mid trapezoidal breach geometry |
 | **Simulation Solvers** | — | SERGHEI (GPU 2D SWE) & LISFLOOD-FP 8.1 | High-resolution hydrodynamic modeling |
-| **Tested Digital Elevation Models** | — | Copernicus GLO-30, FABDEM v1.2, AW3D30 | $60\text{ m}$ & $90\text{ m}$ grid cell resolutions |
+| **Tested Digital Elevation Models** | — | Copernicus GLO-30, FABDEM v1.2, AW3D30 | 60 m & 90 m grid cell resolutions |
 
 ---
 
