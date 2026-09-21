@@ -35,26 +35,77 @@
 <meta name="twitter:description" content="Chorvoq suv ombori to'g'oni yorilishi oqibatida yuzaga keladigan gidrodinamik toshqin to'lqinining 3D modeli.">
 <meta name="twitter:image" content="https://charvak-simulation.github.io/tex/osm.webp">
 
-<!-- Schema.org JSON-LD -->
+<!-- Schema.org JSON-LD (GEO: Generative Engine Optimization) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "Chorvoq to'g'oni yorilishi 3D toshqin simulyatsiyasi",
-  "url": "https://charvak-simulation.github.io/uz.html",
-  "inLanguage": "uz",
-  "description": "Chorvoq suv ombori to'g'oni yorilishi oqibatida vujudga keladigan toshqin to'lqinining 2D gidrodinamik (SERGHEI, LISFLOOD-FP) 3D interaktiv xaritasi.",
-  "applicationCategory": "Simulation / Scientific Tool",
-  "operatingSystem": "All Web Browsers (WebGL)",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Chorvoq suv ombori, Chirchiq havzasi, Toshkent, O'zbekiston",
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 41.627,
-      "longitude": 69.969
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://charvak-simulation.github.io/uz.html#app",
+      "name": "Chorvoq to'g'oni yorilishi 3D toshqin simulyatsiyasi",
+      "url": "https://charvak-simulation.github.io/uz.html",
+      "inLanguage": "uz",
+      "description": "Chorvoq suv ombori to'g'oni to'liq yorilishi oqibatida vujudga keladigan toshqin to'lqinining 2D gidrodinamik (SERGHEI, LISFLOOD-FP) 3D interaktiv xaritasi va Toshkent shahriga yetib kelish vaqti tahlili.",
+      "applicationCategory": "Simulation / Scientific Tool",
+      "operatingSystem": "All Web Browsers (WebGL)",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Chorvoq suv ombori, Chirchiq havzasi, Toshkent, O'zbekiston",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 41.627,
+          "longitude": 69.969
+        }
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://charvak-simulation.github.io/uz.html#dataset",
+      "name": "Chorvoq to'g'oni yorilishi gidrodinamik toshqin ma'lumotlari",
+      "description": "SERGHEI va LISFLOOD-FP 2D sayoz suv tenglamalari asosida hisoblangan toshqin chuqurligi va yetib kelish vaqtlari qatlamlari.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "spatialCoverage": "Chirchiq daryosi havzasi va Toshkent aglomeratsiyasi"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://charvak-simulation.github.io/uz.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Chorvoq to'g'oni yorilib ketsa Toshkent shahrini butunlay suv bosadimi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yo'q, Toshkent shahrining markazi va shimoliy tumanlari (Amir Temur xiyoboni, Yunusobod, Shayxontohur, Mirzo Ulug'bek balandliklari) Chirchiq daryosi o'zanidan 20–50 metr balandlikdagi daryo terrasalari ustida joylashgan. Gidrodinamik hisob-kitoblarga ko'ra, Toshkent markazida (Tashkent centre nazorat nuqtasi) suv chuqurligi 0.00 metrni tashkil etadi (suv kirmaydi). Toshqin faqat Chirchiq daryosi qayiri va janubiy pastqam hududlar (Bektemir, Qo'yliq, Sergeli, Janubiy vokzal va Zangiota pastliklari) bilan cheklanadi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Chorvoqdan toshqin to'lqini Toshkentga qancha vaqtda yetib keladi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Toshqin to'lqini Toshkent shahar chegarasiga (Qo'yliq atrofiga) 3.5 – 4 soatda yetib keladi. Chorvoqdan Toshkentgacha daryo o'zani bo'ylab masofa 60 km dan ortiq bo'lib, to'lqin fronti o'rtacha 12–18 km/soat (3.5–5 m/s) tezlikda harakatlanadi. Toshkentni 10–20 daqiqada yuvib ketishi haqidagi mish-mishlar ilmiy va gidrodinamik jihatdan asossizdir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Toshqin to'lqinining shaharlar bo'yicha yetib kelish vaqti qanday?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bochka darasiga: 0–15 daqiqa (chuqurlik 60–100+ m); G'azalkentga: 1 soat (chuqurlik 17–23 m); Chirchiq shahriga: 2 soat (chuqurlik 16–21 m); Yangibozorga: 2.5–3 soat; Toshkent chekkasiga (Qo'yliq): 3.5–4 soat; Chinozga: 18 soat; Shardara suv omboriga (Qozog'iston): 24 soat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Chorvoq toshqin simulyatsiyasida qanday fizik va ilmiy modellar ishlatilgan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simulyatsiya 2D Sayoz suv tenglamalari (Shallow Water Equations) asosida SERGHEI (GPU-tezlashtirilgan Roe Riemann yechuvchisi, 60 m to'r) va LISFLOOD-FP 8.1 (90 m to'r) yordamida hisoblangan. To'g'on buzilishi Froehlich (2008) empirik modeli bo'yicha olingan: maksimal sarf 182,013 m³/s, shakllanish vaqti 1.6 soat, to'liq suv hajmi 2.0 km³. Relyef uchun Copernicus DEM GLO-30 va FABDEM ma'lumotlaridan foydalanilgan."
+          }
+        }
+      ]
     }
-  }
+  ]
 }
 </script>
 
@@ -76,6 +127,12 @@
  .lang-bar{display:flex;gap:8px;align-items:center;padding-bottom:6px;margin-bottom:6px;border-bottom:1px solid rgba(255,255,255,.15);font-size:12px}
  .lang-bar a{color:#9cf;text-decoration:none}
  .lang-bar a.active{color:#fff;font-weight:bold;border-bottom:2px solid #00d084}
+ .faq-box{margin-top:10px;padding-top:8px;border-top:1px solid rgba(255,255,255,.15);font-size:12px}
+ .faq-box summary{cursor:pointer;font-weight:600;color:#9cf;outline:none}
+ .faq-box summary:hover{color:#fff}
+ .faq-box article{margin-top:8px;line-height:1.4}
+ .faq-box h4{margin:8px 0 2px;color:#ffc;font-size:12px}
+ .faq-box p{margin:0 0 6px;color:#ccd;font-size:11.5px}
 </style>
 </head>
 <body>
@@ -104,6 +161,21 @@
   <div id="flegend" style="display:none;margin:4px 0"><div style="height:8px;background:linear-gradient(90deg,#99d9ff,#000c73)"></div><div style="display:flex;justify-content:space-between"><small id="lg0">0 m</small><small id="lg1">30 m</small></div></div><small id="floodInfo"></small><canvas id="stage" width="270" height="130" style="display:none;background:#0b1020;margin-top:6px"></canvas><small id="stageNote"></small>
  </div>
  <p><small>Aylantirish: sichqoncha bilan tortish; Masshtab: g'ildirak; Siljitish: o'ng tugma. Joyni tekshirish uchun bosing.</small></p>
+
+ <details class="faq-box">
+  <summary>ℹ️ Ilmiy tahlil va Savol-Javob (FAQ)</summary>
+  <article>
+   <h4>Toshkentni butunlay suv bosadimi?</h4>
+   <p><strong>Yo'q.</strong> Shahar markazi va shimoliy tumanlar daryo o'zanidan 20–50 m balandlikdagi terrasalarda joylashgan. Markazda chuqurlik 0.00 m (suv kirmaydi). Faqat Chirchiq qayiri va janubiy pastliklar (Bektemir, Qo'yliq, Sergeli) suv ostida qoladi.</p>
+   <h4>To'lqin Toshkentga qancha vaqtda yetadi?</h4>
+   <p><strong>3.5 – 4 soatda.</strong> Masofa 60 km dan ortiq, to'lqin tezligi 12–18 km/soat. «10–20 daqiqada suv bosadi» degan gaplar mutlaqo asossiz.</p>
+   <h4>Yetib kelish xronologiyasi:</h4>
+   <p>• G'azalkent: ~1 soat (17–23 m)<br>• Chirchiq shahri: ~2 soat (16–21 m)<br>• Toshkent (Qo'yliq): ~3.5–4 soat<br>• Sergeli: ~4.5–5 soat<br>• Chinoz: ~18 soat<br>• Shardara (Qozog'iston): ~24 soat</p>
+   <h4>Ilmiy metodologiya:</h4>
+   <p>SERGHEI (2D SWE, Roe, 60 m to'r) va LISFLOOD-FP 8.1 (90 m). Froehlich (2008) modeli: maksimal sarf 182,013 m³/s, to'liq hajm 2.0 km³.</p>
+   <p><a href="CHARVAK_DATA.md" style="color:#9cf">To'liq gidrologik ma'lumotlar jadvali →</a></p>
+  </article>
+ </details>
 </div>
 <div id="probe">Relyef ustiga bosing</div>
 <div id="attr">Xarita ma'lumotlari © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL). Relyef: Copernicus DEM © DLR/Airbus (ESA); FABDEM © Bristol/Fathom <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>; AW3D30 © JAXA; NASADEM &amp; SRTM: NASA/USGS. Tijoriy bo'lmagan foydalanish. <a href="https://threejs.org">three.js</a> MIT.</div>

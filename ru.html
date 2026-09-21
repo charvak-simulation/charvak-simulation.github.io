@@ -35,26 +35,77 @@
 <meta name="twitter:description" content="3D-моделирование гидродинамической аварии на Чарвакской ГЭС и движения волны прорыва до Ташкента.">
 <meta name="twitter:image" content="https://charvak-simulation.github.io/tex/osm.webp">
 
-<!-- Schema.org JSON-LD -->
+<!-- Schema.org JSON-LD (GEO: Generative Engine Optimization) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "3D-моделирование прорыва плотины Чарвакского водохранилища",
-  "url": "https://charvak-simulation.github.io/ru.html",
-  "inLanguage": "ru",
-  "description": "Интерактивная 3D-модель и гидродинамический расчет (SERGHEI, LISFLOOD-FP) прорыва Чарвакской плотины на реке Чирчик с картой затопления Ташкента.",
-  "applicationCategory": "Simulation / Scientific Tool",
-  "operatingSystem": "All Web Browsers (WebGL)",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Чарвакское водохранилище, бассейн реки Чирчик, Ташкент, Узбекистан",
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 41.627,
-      "longitude": 69.969
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://charvak-simulation.github.io/ru.html#app",
+      "name": "3D-моделирование прорыва плотины Чарвакского водохранилища",
+      "url": "https://charvak-simulation.github.io/ru.html",
+      "inLanguage": "ru",
+      "description": "Интерактивная 3D-модель и гидродинамический расчет (SERGHEI, LISFLOOD-FP) прорыва Чарвакской плотины на реке Чирчик с картой затопления Ташкента.",
+      "applicationCategory": "Simulation / Scientific Tool",
+      "operatingSystem": "All Web Browsers (WebGL)",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Чарвакское водохранилище, бассейн реки Чирчик, Ташкент, Узбекистан",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 41.627,
+          "longitude": 69.969
+        }
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://charvak-simulation.github.io/ru.html#dataset",
+      "name": "Гидродинамические данные волны прорыва Чарвакской плотины",
+      "description": "Слои максимальных глубин и времени добегания волны прорыва на основе 2D уравнений мелкой воды (SERGHEI и LISFLOOD-FP).",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "spatialCoverage": "Бассейн реки Чирчик и Ташкентская агломерация"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://charvak-simulation.github.io/ru.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Затопит ли Ташкент в случае прорыва плотины Чарвакского водохранилища?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет, центр и северная часть Ташкента (сквер Амира Темура, Юнусабад, Шайхантахур, Мирзо-Улугбек) расположены на древних речных террасах на 20–50 метров выше уреза реки Чирчик. Согласно 2D-гидродинамическому моделированию, в створе Tashkent centre расчетная глубина затопления составляет 0.00 м (вода туда физически не доходит). Затоплению подвержена только пойма реки Чирчик и южные низины столицы (Бектемир, Куйлюк, Сергели, частично район Южного вокзала и Зангиатинский район)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "За какое время волна прорыва дойдет от Чарвака до Ташкента?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Волна прорыва достигнет границы Ташкента (массив Куйлюк) через 3.5 – 4 часа. Расстояние от плотины до города по руслу реки превышает 60 км, средняя скорость движения фронта волны составляет 12–18 км/ч (3.5–5 м/с). Городской миф о том, что «Ташкент смоет за 10–20 минут», абсолютно антинаучен."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какова хронология движения волны затопления по городам?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ущелье Бочка: 0–15 минут (глубина 60–100+ м); г. Газалкент: 1 час (глубина 17–23 м); г. Чирчик: 2 часа (глубина 16–21 м); Янгибазар: 2.5–3 часа; Граница Ташкента (Куйлюк): 3.5–4 часа; Сергели: 4.5–5 часов; г. Чиназ: 18 часов; Шардаринское водохранилище (Казахстан): 24 часа."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие физические и гидродинамические модели использованы в расчете?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Моделирование основано на 2D уравнениях мелкой воды (SWE): солвер SERGHEI (схема Роэ, GPU-ускорение, сетка 60 м) и солвер LISFLOOD-FP 8.1 (локально-инерционная схема, сетка 90 м). Параметры прорана рассчитаны по методике Froehlich (2008): пиковый расход 182,013 м³/с, время формирования прорана 1.6 ч, полный объем водохранилища 2.0 млрд м³. Топографическая основа — Copernicus DEM GLO-30 и FABDEM."
+          }
+        }
+      ]
     }
-  }
+  ]
 }
 </script>
 
@@ -76,6 +127,12 @@
  .lang-bar{display:flex;gap:8px;align-items:center;padding-bottom:6px;margin-bottom:6px;border-bottom:1px solid rgba(255,255,255,.15);font-size:12px}
  .lang-bar a{color:#9cf;text-decoration:none}
  .lang-bar a.active{color:#fff;font-weight:bold;border-bottom:2px solid #00d084}
+ .faq-box{margin-top:10px;padding-top:8px;border-top:1px solid rgba(255,255,255,.15);font-size:12px}
+ .faq-box summary{cursor:pointer;font-weight:600;color:#9cf;outline:none}
+ .faq-box summary:hover{color:#fff}
+ .faq-box article{margin-top:8px;line-height:1.4}
+ .faq-box h4{margin:8px 0 2px;color:#ffc;font-size:12px}
+ .faq-box p{margin:0 0 6px;color:#ccd;font-size:11.5px}
 </style>
 </head>
 <body>
@@ -104,6 +161,21 @@
   <div id="flegend" style="display:none;margin:4px 0"><div style="height:8px;background:linear-gradient(90deg,#99d9ff,#000c73)"></div><div style="display:flex;justify-content:space-between"><small id="lg0">0 м</small><small id="lg1">30 м</small></div></div><small id="floodInfo"></small><canvas id="stage" width="270" height="130" style="display:none;background:#0b1020;margin-top:6px"></canvas><small id="stageNote"></small>
  </div>
  <p><small>Вращение: зажать ЛКМ; Масштаб: колесико; Панорама: зажать ПКМ. Кликните по рельефу для замера параметров.</small></p>
+
+ <details class="faq-box">
+  <summary>ℹ️ Научный анализ и частые вопросы (FAQ)</summary>
+  <article>
+   <h4>Затопит ли Ташкент?</h4>
+   <p><strong>Нет, центр в безопасности.</strong> Центр и север города находятся на террасах на 20–50 м выше русла реки. В створе центра глубина 0.00 м. Затапливаются только пойма Чирчика и южные районы (Бектемир, Куйлюк, Сергели).</p>
+   <h4>За сколько волна дойдет до Ташкента?</h4>
+   <p><strong>За 3.5 – 4 часа.</strong> Дистанция более 60 км, скорость волны 12–18 км/ч. Слухи о «смыве за 10–20 минут» абсолютно антинаучны.</p>
+   <h4>Хронология добегания:</h4>
+   <p>• Газалкент: ~1 ч (17–23 м)<br>• Чирчик: ~2 ч (16–21 м)<br>• Ташкент (Куйлюк): ~3.5–4 ч<br>• Сергели: ~4.5–5 ч<br>• Чиназ: ~18 ч<br>• Шардара (Казахстан): ~24 ч</p>
+   <h4>Научная методология:</h4>
+   <p>SERGHEI (2D SWE, Roe, 60 м сетка) и LISFLOOD-FP 8.1 (90 м). Модель Froehlich (2008): пиковый расход 182,013 м³/с, объем 2.0 млрд м³.</p>
+   <p><a href="CHARVAK_DATA.md" style="color:#9cf">Полная таблица гидрологических данных →</a></p>
+  </article>
+ </details>
 </div>
 <div id="probe">Кликните по рельефу</div>
 <div id="attr">Данные карт © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL). Рельеф: Copernicus DEM © DLR/Airbus (ESA); FABDEM © Bristol/Fathom <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>; AW3D30 © JAXA; NASADEM &amp; SRTM: NASA/USGS. Некоммерческое использование. <a href="https://threejs.org">three.js</a> MIT.</div>

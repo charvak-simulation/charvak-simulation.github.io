@@ -35,26 +35,77 @@
 <meta name="twitter:description" content="Interactive 3D hydrodynamic dam-break simulation of Charvak Reservoir with flood wave propagation to Tashkent.">
 <meta name="twitter:image" content="https://charvak-simulation.github.io/tex/osm.webp">
 
-<!-- Schema.org JSON-LD -->
+<!-- Schema.org JSON-LD (GEO: Generative Engine Optimization) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "Charvak Dam Breach 3D Flood Simulation",
-  "url": "https://charvak-simulation.github.io/",
-  "inLanguage": "en",
-  "description": "Interactive 3D hydrodynamic dam-break simulation (SERGHEI, LISFLOOD-FP) of Charvak Reservoir on the Chirchik River with flood hazard mapping for Tashkent.",
-  "applicationCategory": "Simulation / Scientific Tool",
-  "operatingSystem": "All Web Browsers (WebGL)",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Charvak Reservoir, Chirchik River Basin, Tashkent, Uzbekistan",
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 41.627,
-      "longitude": 69.969
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://charvak-simulation.github.io/#app",
+      "name": "Charvak Dam Breach 3D Flood Simulation",
+      "url": "https://charvak-simulation.github.io/",
+      "inLanguage": "en",
+      "description": "Interactive 3D hydrodynamic dam-break simulation (SERGHEI, LISFLOOD-FP) of Charvak Reservoir on the Chirchik River with flood hazard mapping for Tashkent.",
+      "applicationCategory": "Simulation / Scientific Tool",
+      "operatingSystem": "All Web Browsers (WebGL)",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Charvak Reservoir, Chirchik River Basin, Tashkent, Uzbekistan",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 41.627,
+          "longitude": 69.969
+        }
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://charvak-simulation.github.io/#dataset",
+      "name": "Charvak Dam Breach Hydrodynamic Flood Datasets",
+      "description": "2D Shallow Water Equations flood depth and wave arrival time raster layers computed via SERGHEI and LISFLOOD-FP.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "spatialCoverage": "Chirchik River Basin and Tashkent Metropolitan Area"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://charvak-simulation.github.io/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Will Tashkent be submerged if the Charvak Dam breaches?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Central and northern Tashkent (Amir Timur Square, Yunusabad, Shaykhantahur, and elevated areas of Mirzo Ulugbek) are located on ancient Pleistocene river terraces 20–50 meters above the Chirchik riverbed. 2D hydrodynamic modeling confirms a water depth of 0.00 m at the Tashkent centre gauge (water does not enter). Flooding is strictly limited to the Chirchik river floodplain and southern low-lying districts (Bektemir, Qo'yliq, Sergeli, and parts of Zangiata)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take for the flood wave to reach Tashkent from Charvak?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The flood wave reaches the border of Tashkent (Qo'yliq area) in 3.5 to 4 hours. The river distance from Charvak Dam to Tashkent exceeds 60 km, with average wave front velocities of 12–18 km/h (3.5–5 m/s). Popular claims that Tashkent would be wiped out in 10–20 minutes are scientifically baseless."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the timeline of the flood wave reaching downstream settlements?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bochka Gorge: 0–15 min (depths 60–100+ m); Gazalkent town: 1 hour (depths 17–23 m); Chirchik industrial city: 2 hours (depths 16–21 m); Yangibozor: 2.5–3 hours; Tashkent perimeter (Qo'yliq): 3.5–4 hours; Sergeli district: 4.5–5 hours; Chinaz: 18 hours; Shardara Reservoir (Kazakhstan): 24 hours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What physical models and numerical solvers were used in the simulation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The simulation solves the 2D Shallow Water Equations (SWE) using SERGHEI (GPU-accelerated Roe Riemann finite-volume solver on a 60 m grid) and LISFLOOD-FP 8.1 (local inertial solver on a 90 m grid). Dam breach hydrograph follows Froehlich (2008) with a peak outflow discharge of 182,013 m³/s, breach formation time of 1.6 hours, and 2.0 km³ full reservoir storage. Topography is grounded in Copernicus DEM GLO-30 and FABDEM."
+          }
+        }
+      ]
     }
-  }
+  ]
 }
 </script>
 
@@ -76,6 +127,12 @@
  .lang-bar{display:flex;gap:8px;align-items:center;padding-bottom:6px;margin-bottom:6px;border-bottom:1px solid rgba(255,255,255,.15);font-size:12px}
  .lang-bar a{color:#9cf;text-decoration:none}
  .lang-bar a.active{color:#fff;font-weight:bold;border-bottom:2px solid #00d084}
+ .faq-box{margin-top:10px;padding-top:8px;border-top:1px solid rgba(255,255,255,.15);font-size:12px}
+ .faq-box summary{cursor:pointer;font-weight:600;color:#9cf;outline:none}
+ .faq-box summary:hover{color:#fff}
+ .faq-box article{margin-top:8px;line-height:1.4}
+ .faq-box h4{margin:8px 0 2px;color:#ffc;font-size:12px}
+ .faq-box p{margin:0 0 6px;color:#ccd;font-size:11.5px}
 </style>
 </head>
 <body>
@@ -104,6 +161,21 @@
   <div id="flegend" style="display:none;margin:4px 0"><div style="height:8px;background:linear-gradient(90deg,#99d9ff,#000c73)"></div><div style="display:flex;justify-content:space-between"><small id="lg0">0 m</small><small id="lg1">30 m</small></div></div><small id="floodInfo"></small><canvas id="stage" width="270" height="130" style="display:none;background:#0b1020;margin-top:6px"></canvas><small id="stageNote"></small>
  </div>
  <p><small>Rotate: drag mouse; Zoom: scroll wheel; Pan: right click drag. Click terrain to probe values.</small></p>
+
+ <details class="faq-box">
+  <summary>ℹ️ Scientific Analysis & FAQ</summary>
+  <article>
+   <h4>Will Tashkent drown?</h4>
+   <p><strong>No, central Tashkent is safe.</strong> The city center and northern districts sit on terraces 20–50 m above the Chirchik riverbed. Gauge depth at center is 0.00 m. Inundation is confined to the Chirchik river floodplain and southern lowlands (Bektemir, Qo'yliq, Sergeli).</p>
+   <h4>How long until water reaches Tashkent?</h4>
+   <p><strong>3.5 to 4 hours.</strong> The river distance exceeds 60 km and wave front moves at 12–18 km/h. Rumors of «wiped out in 10–20 minutes» are scientifically impossible.</p>
+   <h4>Downstream arrival timeline:</h4>
+   <p>• Gazalkent: ~1 h (17–23 m)<br>• Chirchik: ~2 h (16–21 m)<br>• Tashkent (Qo'yliq): ~3.5–4 h<br>• Sergeli: ~4.5–5 h<br>• Chinaz: ~18 h<br>• Shardara (Kazakhstan): ~24 h</p>
+   <h4>Scientific methodology:</h4>
+   <p>SERGHEI (2D SWE, Roe, 60 m grid) and LISFLOOD-FP 8.1 (90 m). Froehlich (2008) model: peak discharge 182,013 m³/s, volume 2.0 km³.</p>
+   <p><a href="CHARVAK_DATA.md" style="color:#9cf">Full hydrological data tables →</a></p>
+  </article>
+ </details>
 </div>
 <div id="probe">Click on terrain to probe</div>
 <div id="attr">Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL). Terrain: Copernicus DEM © DLR/Airbus (ESA); FABDEM © Bristol/Fathom <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>; AW3D30 © JAXA; NASADEM &amp; SRTM: NASA/USGS. Non-commercial use. <a href="https://threejs.org">three.js</a> MIT.</div>
