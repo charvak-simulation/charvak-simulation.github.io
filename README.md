@@ -6,6 +6,8 @@
 
 > 🌐 **Interaktiv 3D Simulyatsiyani ko'rish / View Interactive 3D Simulation / Смотреть интерактивную 3D-модель:**  
 > 👉 **[https://charvak-simulation.github.io/](https://charvak-simulation.github.io/)**  
+> 🌐 **Alohida til sahifalari / Dedicated language pages / Выделенные языковые страницы:**  
+> 🇺🇿 **[O'zbekcha 3D (uz.html)](https://charvak-simulation.github.io/uz.html)** | 🇷🇺 **[Русская версия (ru.html)](https://charvak-simulation.github.io/ru.html)** | 🇬🇧 **[English version (en.html)](https://charvak-simulation.github.io/en.html)**  
 > 📊 **Barcha texnik va gidrologik ma'lumotlar / Full Technical & Hydrological Data / Полные техданные:**  
 > 👉 **[CHARVAK_DATA.md](CHARVAK_DATA.md)**
 
@@ -27,7 +29,7 @@ Ushbu ochiq ilmiy-tadqiqot loyihasi **Chorvoq suv ombori** (Toshkent viloyati, B
 
 Simulyatsiya **Claude Code (Claude Fable 5.1)** yordamida ishlab chiqilgan bo'lib, hisob-kitoblar GPU (NVIDIA CUDA) yadrolarida o'nlab soatlar davomida amalga oshirildi. 
 
-🌐 **Onlayn 3D xaritani ishga tushirish:** [https://charvak-simulation.github.io/](https://charvak-simulation.github.io/)
+🌐 **Onlayn 3D xaritani ishga tushirish:** [O'zbekcha 3D Simulyatsiya (uz.html)](https://charvak-simulation.github.io/uz.html) yoki [Asosiy sahifa](https://charvak-simulation.github.io/)
 
 ---
 
@@ -76,7 +78,7 @@ Ijtimoiy tarmoqlarda tarqalgan *"Chorvoq to'g'oni yorilsa, butun Toshkent 10 daq
 Данный открытый научно-исследовательский проект представляет результаты численного 2D-гидродинамического моделирования катастрофического прорыва **Чарвакской плотины** на реке Чирчик (Бостанлыкский район Ташкентской области) на базе **уравнений мелкой воды (Shallow Water Equations)**.
 
 Интерактивная трехмерная визуализация развернута на GitHub Pages:  
-🌐 **Смотреть 3D-модель онлайн:** [https://charvak-simulation.github.io/](https://charvak-simulation.github.io/)
+🌐 **Смотреть 3D-модель онлайн:** [Русская версия 3D-модели (ru.html)](https://charvak-simulation.github.io/ru.html) или [Главная страница](https://charvak-simulation.github.io/)
 
 ---
 
@@ -124,7 +126,7 @@ Ijtimoiy tarmoqlarda tarqalgan *"Chorvoq to'g'oni yorilsa, butun Toshkent 10 daq
 ### What happens if the Charvak Dam breaches?
 This open scientific project provides high-resolution 2D hydrodynamic modeling of a hypothetical catastrophic dam break at the **Charvak Reservoir** (Bostanlyk district, Tashkent region, Uzbekistan) along the Chirchik River basin using **2D Shallow Water Equations (SWE)**.
 
-🌐 **Launch the Interactive 3D WebGL Simulation:** [https://charvak-simulation.github.io/](https://charvak-simulation.github.io/)
+🌐 **Launch the Interactive 3D WebGL Simulation:** [English 3D Simulation (en.html)](https://charvak-simulation.github.io/en.html) or [Main page](https://charvak-simulation.github.io/)
 
 ---
 

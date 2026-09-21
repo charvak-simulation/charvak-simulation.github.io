@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://charvak-simulation.github.io/sitemap.xml

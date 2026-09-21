@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 <meta charset="utf-8">
-<title>Charvak Dam Breach Flood Simulation: 3D Hydrodynamic Model | Tashkent, Uzbekistan</title>
+<title>Прорыв плотины Чарвакского водохранилища: 3D-моделирование волны затопления | Charvak Simulation</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Interactive 3D hydrodynamic dam-break simulation (SERGHEI, LISFLOOD-FP) of Charvak Reservoir on the Chirchik River. Explore flood wave arrival times and inundation depths across Tashkent and the Chirchik valley.">
-<meta name="keywords" content="Charvak dam break, Charvak reservoir, Charvak simulation, Tashkent flood, Charvak HPP, Bostanlyk, Chirchik river flood, Uzbekistan dam safety, Sardoba, Shardara, Chorvoq suv ombori, Чарвакское водохранилище">
-<link rel="canonical" href="https://charvak-simulation.github.io/">
+<meta name="description" content="Интерактивная 3D-модель и гидродинамический расчет (SERGHEI, LISFLOOD-FP) прорыва Чарвакской плотины на реке Чирчик с картой затопления и временем добегания волны до Ташкента.">
+<meta name="keywords" content="Чарвакское водохранилище, Чарвак, прорыв Чарвакской плотины, Чарвакская ГЭС, затопление Ташкента, волна прорыва реки Чирчик, безопасность плотины Чарвак, Сардоба, Шардара, Бостанлыкский район">
+<link rel="canonical" href="https://charvak-simulation.github.io/ru.html">
 
 <!-- Hreflang multi-language tags -->
 <link rel="alternate" hreflang="uz" href="https://charvak-simulation.github.io/uz.html">
@@ -16,23 +16,23 @@
 
 <!-- GEO Meta Tags -->
 <meta name="geo.region" content="UZ-TO">
-<meta name="geo.placename" content="Charvak Reservoir, Bostanlyk District, Tashkent Region, Uzbekistan">
+<meta name="geo.placename" content="Чарвак, Бостанлыкский район, Ташкентская область, Узбекистан">
 <meta name="geo.position" content="41.627;69.969">
 <meta name="ICBM" content="41.627, 69.969">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://charvak-simulation.github.io/">
-<meta property="og:title" content="Charvak Dam Breach Flood Simulation: 3D Hydrodynamic Model">
-<meta property="og:description" content="Interactive 3D hydrodynamic dam-break simulation of Charvak Reservoir with flood wave propagation to Tashkent.">
+<meta property="og:url" content="https://charvak-simulation.github.io/ru.html">
+<meta property="og:title" content="Прорыв плотины Чарвакского водохранилища: 3D-моделирование волны затопления">
+<meta property="og:description" content="Интерактивная 3D-модель и гидродинамический расчет прорыва Чарвакской плотины на реке Чирчик с зоной затопления Ташкента.">
 <meta property="og:image" content="https://charvak-simulation.github.io/tex/osm.webp">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="ru_RU">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://charvak-simulation.github.io/">
-<meta name="twitter:title" content="Charvak Dam Breach Flood Simulation: 3D Hydrodynamic Model">
-<meta name="twitter:description" content="Interactive 3D hydrodynamic dam-break simulation of Charvak Reservoir with flood wave propagation to Tashkent.">
+<meta name="twitter:url" content="https://charvak-simulation.github.io/ru.html">
+<meta name="twitter:title" content="Прорыв плотины Чарвакского водохранилища: 3D-моделирование волны затопления">
+<meta name="twitter:description" content="3D-моделирование гидродинамической аварии на Чарвакской ГЭС и движения волны прорыва до Ташкента.">
 <meta name="twitter:image" content="https://charvak-simulation.github.io/tex/osm.webp">
 
 <!-- Schema.org JSON-LD -->
@@ -40,15 +40,15 @@
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "Charvak Dam Breach 3D Flood Simulation",
-  "url": "https://charvak-simulation.github.io/",
-  "inLanguage": "en",
-  "description": "Interactive 3D hydrodynamic dam-break simulation (SERGHEI, LISFLOOD-FP) of Charvak Reservoir on the Chirchik River with flood hazard mapping for Tashkent.",
+  "name": "3D-моделирование прорыва плотины Чарвакского водохранилища",
+  "url": "https://charvak-simulation.github.io/ru.html",
+  "inLanguage": "ru",
+  "description": "Интерактивная 3D-модель и гидродинамический расчет (SERGHEI, LISFLOOD-FP) прорыва Чарвакской плотины на реке Чирчик с картой затопления Ташкента.",
   "applicationCategory": "Simulation / Scientific Tool",
   "operatingSystem": "All Web Browsers (WebGL)",
   "spatialCoverage": {
     "@type": "Place",
-    "name": "Charvak Reservoir, Chirchik River Basin, Tashkent, Uzbekistan",
+    "name": "Чарвакское водохранилище, бассейн реки Чирчик, Ташкент, Узбекистан",
     "geo": {
       "@type": "GeoCoordinates",
       "latitude": 41.627,
@@ -79,34 +79,34 @@
 </style>
 </head>
 <body>
-<div id="loading">Loading terrain…</div>
+<div id="loading">Загрузка рельефа…</div>
 <div id="ui">
  <div class="lang-bar">
-  <span>Language / Til:</span>
+  <span>Язык / Til:</span>
   <a href="uz.html">🇺🇿 O'zbek</a>
   <span>|</span>
-  <a href="ru.html">🇷🇺 Русский</a>
+  <a href="ru.html" class="active">🇷🇺 Русский</a>
   <span>|</span>
-  <a href="en.html" class="active">🇬🇧 English</a>
+  <a href="en.html">🇬🇧 English</a>
  </div>
- <h3>Elevation (DEM)</h3><div id="dems"></div>
- <h3>Surface Texture</h3>
+ <h3>Рельеф (ЦМР / DEM)</h3><div id="dems"></div>
+ <h3>Текстура поверхности</h3>
  <label><input type="radio" name="tex" value="osm" checked> OpenStreetMap</label>
- <label><input type="radio" name="tex" value="shade"> Hypsometric hillshade</label>
- <label><input type="radio" name="tex" value="mix"> OSM + hillshade blend</label>
- <label>Vertical exaggeration <span id="exv">2.0</span>× <input id="ex" type="range" min="0.5" max="5" step="0.1" value="2"></label>
- <label><input type="checkbox" id="labels" checked> Settlement labels</label>
+ <label><input type="radio" name="tex" value="shade"> Гипсометрическая отмывка</label>
+ <label><input type="radio" name="tex" value="mix"> Смесь OSM и отмывки</label>
+ <label>Вертикальное преувеличение <span id="exv">2.0</span>× <input id="ex" type="range" min="0.5" max="5" step="0.1" value="2"></label>
+ <label><input type="checkbox" id="labels" checked> Подписи населенных пунктов</label>
  <div id="flood">
-  <h3>Dam-break flood wave</h3>
-  <label>Solver <select id="solver"></select></label>
-  <label>Data layer <select id="floodLayer"><option value="none">off</option><option value="maxdepth">maximum depth</option><option value="arrival">arrival time</option><option value="anim">flood animation</option></select></label>
-  <div id="animCtl" style="display:none"><button id="play">▶ play</button><span id="tlabel">t = 0 h</span><input id="frame" type="range" min="0" max="0" step="1" value="0"><label>Speed <span id="spdv">2 frame/s</span><input id="spd" type="range" min="1" max="10" step="1" value="2"></label></div>
-  <div id="flegend" style="display:none;margin:4px 0"><div style="height:8px;background:linear-gradient(90deg,#99d9ff,#000c73)"></div><div style="display:flex;justify-content:space-between"><small id="lg0">0 m</small><small id="lg1">30 m</small></div></div><small id="floodInfo"></small><canvas id="stage" width="270" height="130" style="display:none;background:#0b1020;margin-top:6px"></canvas><small id="stageNote"></small>
+  <h3>Волна прорыва плотины</h3>
+  <label>Солвер <select id="solver"></select></label>
+  <label>Слой данных <select id="floodLayer"><option value="none">отключен</option><option value="maxdepth">максимальная глубина</option><option value="arrival">время добегания</option><option value="anim">анимация затопления</option></select></label>
+  <div id="animCtl" style="display:none"><button id="play">▶ пуск</button><span id="tlabel">t = 0 ч</span><input id="frame" type="range" min="0" max="0" step="1" value="0"><label>Скорость <span id="spdv">2 кадра/с</span><input id="spd" type="range" min="1" max="10" step="1" value="2"></label></div>
+  <div id="flegend" style="display:none;margin:4px 0"><div style="height:8px;background:linear-gradient(90deg,#99d9ff,#000c73)"></div><div style="display:flex;justify-content:space-between"><small id="lg0">0 м</small><small id="lg1">30 м</small></div></div><small id="floodInfo"></small><canvas id="stage" width="270" height="130" style="display:none;background:#0b1020;margin-top:6px"></canvas><small id="stageNote"></small>
  </div>
- <p><small>Rotate: drag mouse; Zoom: scroll wheel; Pan: right click drag. Click terrain to probe values.</small></p>
+ <p><small>Вращение: зажать ЛКМ; Масштаб: колесико; Панорама: зажать ПКМ. Кликните по рельефу для замера параметров.</small></p>
 </div>
-<div id="probe">Click on terrain to probe</div>
-<div id="attr">Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL). Terrain: Copernicus DEM © DLR/Airbus (ESA); FABDEM © Bristol/Fathom <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>; AW3D30 © JAXA; NASADEM &amp; SRTM: NASA/USGS. Non-commercial use. <a href="https://threejs.org">three.js</a> MIT.</div>
+<div id="probe">Кликните по рельефу</div>
+<div id="attr">Данные карт © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL). Рельеф: Copernicus DEM © DLR/Airbus (ESA); FABDEM © Bristol/Fathom <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>; AW3D30 © JAXA; NASADEM &amp; SRTM: NASA/USGS. Некоммерческое использование. <a href="https://threejs.org">three.js</a> MIT.</div>
 <script type="importmap">{"imports":{"three":"./lib/three.module.min.js"}}</script>
 <script type="module">
 import * as THREE from 'three';
@@ -185,7 +185,7 @@ demsDiv.addEventListener('change', e => setDem(e.target.value));
 document.querySelectorAll('input[name=tex]').forEach(r => r.addEventListener('change', e => uniforms.texMode.value = {osm:0, shade:1, mix:2}[e.target.value]));
 document.getElementById('ex').addEventListener('input', e => { uniforms.exag.value = +e.target.value; document.getElementById('exv').textContent = (+e.target.value).toFixed(1); });
 
-const PLACES = [["Charvak dam",41.627,69.969],["Tashkent",41.311,69.280],["Chirchik",41.470,69.582],["Gazalkent",41.55,69.76],["Chinaz",40.936,68.755],["Shardara reservoir",41.22,68.13],["Mount Chimgan 3309 m",41.4954,70.0582],["Angren",41.02,70.14],["Shymkent",42.32,69.59]];
+const PLACES = [["Чарвакская плотина",41.627,69.969],["Ташкент",41.311,69.280],["Чирчик",41.470,69.582],["Газалкент",41.55,69.76],["Чиназ",40.936,68.755],["Шардаринское вдхр.",41.22,68.13],["Большой Чимган 3309 м",41.4954,70.0582],["Ангрен",41.02,70.14],["Шымкент",42.32,69.59]];
 function toUTM(lat, lon){ const a=6378137, f=1/298.257223563, k0=0.9996, lon0=69; const e2=f*(2-f), ep2=e2/(1-e2); const φ=lat*Math.PI/180, λ=(lon-lon0)*Math.PI/180; const N=a/Math.sqrt(1-e2*Math.sin(φ)**2), T=Math.tan(φ)**2, C=ep2*Math.cos(φ)**2, A=Math.cos(φ)*λ; const M=a*((1-e2/4-3*e2*e2/64-5*e2**3/256)*φ-(3*e2/8+3*e2*e2/32+45*e2**3/1024)*Math.sin(2*φ)+(15*e2*e2/256+45*e2**3/1024)*Math.sin(4*φ)-(35*e2**3/3072)*Math.sin(6*φ)); const x=500000+k0*N*(A+(1-T+C)*A**3/6+(5-18*T+T*T+72*C-58*ep2)*A**5/120); const y=k0*(M+N*Math.tan(φ)*(A*A/2+(5-T+9*C+4*C*C)*A**4/24+(61-58*T+T*T+600*C-330*ep2)*A**6/720)); return [x,y]; }
 function gridXY(lat, lon){ const [x,y] = toUTM(lat, lon); return [(x-G.x0)/G.cell, (G.y0-y)/G.cell]; }
 function toScene(px, py, h){ return new THREE.Vector3(((px-CROP.x)/CROP.w-0.5)*WORLD, h*SCALE*uniforms.exag.value, ((py-CROP.y)/CROP.h-0.5)*H); }
@@ -200,40 +200,40 @@ renderer.domElement.addEventListener('click', e => {
   for (let s=0; s<4000; s++) { const p = o.clone().addScaledVector(d, t); const px = (p.x/WORLD+0.5)*CROP.w + CROP.x, py = (p.z/H+0.5)*CROP.h + CROP.y;
     if (!inCrop(px,py)) { if (t>WORLD*6) break; t += WORLD/400; continue; }
     const h = heightAt(px,py)*SCALE*ex; if (p.y <= h) { hit = {px,py,h:heightAt(px,py)}; break; } t += Math.max(WORLD/2000, (p.y-h)*0.5); }
-  if (!hit) { probe.textContent = 'no terrain under cursor'; return; }
+  if (!hit) { probe.textContent = 'нет рельефа под курсором'; return; }
   const x = G.x0 + hit.px*G.cell, y = G.y0 - hit.py*G.cell;
-  let txt = `UTM42N ${x.toFixed(0)} E ${y.toFixed(0)} N   ${DEMS[current].name}: ${hit.h.toFixed(1)} m`;
-  if (floodArr) { const v = floodArr[Math.round(hit.py)*G.width+Math.round(hit.px)]; txt += floodMode==2 ? (v>0?`   arrival ${(v/10).toFixed(1)} h`:'   never flooded') : `   depth ${(v/10).toFixed(1)} m`; }
+  let txt = `UTM42N ${x.toFixed(0)} E ${y.toFixed(0)} N   ${DEMS[current].name}: ${hit.h.toFixed(1)} м`;
+  if (floodArr) { const v = floodArr[Math.round(hit.py)*G.width+Math.round(hit.px)]; txt += floodMode==2 ? (v>0?`   добегание ${(v/10).toFixed(1)} ч`:'   не затапливается') : `   глубина ${(v/10).toFixed(1)} м`; }
   probe.textContent = txt; });
 
 let floodArr = null, floodMode = 0, frames = [], playing = false, fi = 0, lastT = 0;
 const fl = document.getElementById('floodLayer'), fr = document.getElementById('frame');
-const SOLVER_NAMES = {acc:'local inertial (acc), 90 m', fv1:'shallow water equations (FV1), 90 m', serghei_60m:'full shallow water (SERGHEI, Roe), 60 m'};
-function solverLabel(v){ if (SOLVER_NAMES[v]) return SOLVER_NAMES[v]; const m = v.match(/^fv1_(\d+)m(?:_(\w+))?$/); return m ? `FV1, ${m[1]} m grid${m[2] ? ' ('+m[2]+')' : ''}` : v; }
+const SOLVER_NAMES = {acc:'локально-инерционный (acc), 90 м', fv1:'уравнения мелкой воды (FV1), 90 м', serghei_60m:'полные уравнения мелкой воды (SERGHEI, Roe), 60 м'};
+function solverLabel(v){ if (SOLVER_NAMES[v]) return SOLVER_NAMES[v]; const m = v.match(/^fv1_(\d+)m(?:_(\w+))?$/); return m ? `FV1, сетка ${m[1]} м${m[2] ? ' ('+m[2]+')' : ''}` : v; }
 if (flood) { const variants = [...new Set(flood.dems.map(k => k.replace(/^[a-z0-9]+_/, '')))]; const sel = document.getElementById('solver'); for (const v of variants) { const o = document.createElement('option'); o.value = v; o.textContent = solverLabel(v); sel.appendChild(o); }
   document.getElementById('flood').style.display='block'; fr.max = flood.frames.length-1; document.getElementById('floodInfo').textContent = flood.info || ''; }
 async function loadFlood(url){ const im = new Image(); im.src = url; await im.decode(); const c = document.createElement('canvas'); c.width = im.width; c.height = im.height; const g = c.getContext('2d',{willReadFrequently:true}); g.drawImage(im,0,0); const d = g.getImageData(0,0,im.width,im.height).data; const a = new Uint16Array(im.width*im.height); for (let i=0;i<a.length;i++) a[i]=d[i*4]+256*d[i*4+1]; return a; }
 const floodTexCache = {};
 async function showFloodTex(url, mode, fmax){ const t = floodTexCache[url] ||= await loadTex(url); t.minFilter = t.magFilter = THREE.NearestFilter; uniforms.fmap.value = t; uniforms.fmode.value = mode; uniforms.fmax.value = fmax; floodMode = mode; floodArr = await loadFlood(url); }
-async function updateFlood(){ if (!flood) return; for (const o of document.getElementById('solver').options) o.disabled = !flood.dems.includes(`${current}_${o.value}`); const v = fl.value; document.getElementById('animCtl').style.display = v==='anim' ? 'block' : 'none'; document.getElementById('flegend').style.display = v==='none' ? 'none' : 'block'; document.getElementById('lg1').textContent = v==='arrival' ? flood.hours+' h' : '≥30 m'; document.getElementById('lg0').textContent = v==='arrival' ? '0 h' : '0 m'; document.getElementById('flegend').firstElementChild.style.background = v==='arrival' ? 'linear-gradient(90deg,#30123b,#4686fb,#1ae4b6,#a4fc3c,#fabf2b,#e35a12,#7a0403)' : 'linear-gradient(90deg,#99d9ff,#000c73)'; drawStage();
+async function updateFlood(){ if (!flood) return; for (const o of document.getElementById('solver').options) o.disabled = !flood.dems.includes(`${current}_${o.value}`); const v = fl.value; document.getElementById('animCtl').style.display = v==='anim' ? 'block' : 'none'; document.getElementById('flegend').style.display = v==='none' ? 'none' : 'block'; document.getElementById('lg1').textContent = v==='arrival' ? flood.hours+' ч' : '≥30 м'; document.getElementById('lg0').textContent = v==='arrival' ? '0 ч' : '0 м'; document.getElementById('flegend').firstElementChild.style.background = v==='arrival' ? 'linear-gradient(90deg,#30123b,#4686fb,#1ae4b6,#a4fc3c,#fabf2b,#e35a12,#7a0403)' : 'linear-gradient(90deg,#99d9ff,#000c73)'; drawStage();
   if (v==='none') { uniforms.fmode.value = 0; floodArr = null; floodMode = 0; return; }
   const dem = floodKey();
   if (v==='maxdepth') showFloodTex(`flood/${dem}/maxdepth.webp`, 1, 300);
   else if (v==='arrival') showFloodTex(`flood/${dem}/arrival.webp`, 2, flood.hours*10);
   else { fr.max = framesOf(floodKey()).length-1; showFrame(Math.min(+fr.value, +fr.max)); } }
 function framesOf(k){ return (flood.frames_by_key && flood.frames_by_key[k]) || flood.frames; }
-async function showFrame(i){ fi = i; fr.value = i; const dem = floodKey(); const fr_ = framesOf(dem); i = Math.min(i, fr_.length-1); fr.max = fr_.length-1; document.getElementById('tlabel').textContent = `t = ${fr_[i].toFixed(2)} h`; await showFloodTex(`flood/${dem}/f${String(i).padStart(3,'0')}.webp`, 1, 300); }
+async function showFrame(i){ fi = i; fr.value = i; const dem = floodKey(); const fr_ = framesOf(dem); i = Math.min(i, fr_.length-1); fr.max = fr_.length-1; document.getElementById('tlabel').textContent = `t = ${fr_[i].toFixed(2)} ч`; await showFloodTex(`flood/${dem}/f${String(i).padStart(3,'0')}.webp`, 1, 300); }
 function floodKey(){ const k = `${current}_${document.getElementById('solver').value}`; return flood.dems.includes(k) ? k : flood.dems[0]; }
 fl.addEventListener('change', updateFlood); document.getElementById('solver').addEventListener('change', updateFlood); fr.addEventListener('input', e => showFrame(+e.target.value));
-document.getElementById('spd').addEventListener('input', e => document.getElementById('spdv').textContent = e.target.value + ' frame/s');
-document.getElementById('play').addEventListener('click', e => { playing = !playing; e.target.textContent = playing ? '⏸ pause' : '▶ play'; });
+document.getElementById('spd').addEventListener('input', e => document.getElementById('spdv').textContent = e.target.value + ' кадра/с');
+document.getElementById('play').addEventListener('click', e => { playing = !playing; e.target.textContent = playing ? '⏸ пауза' : '▶ пуск'; });
 
 function drawStage(){ const c = document.getElementById('stage'); const dem = flood && flood.stage && (flood.stage[floodKey()] || null); if (!dem || fl.value==='none') { c.style.display='none'; document.getElementById('stageNote').textContent=''; return; }
   c.style.display='block'; const g = c.getContext('2d'); g.clearRect(0,0,c.width,c.height); const names = Object.keys(dem.depth); const cols = ['#ff5','#f80','#f44','#4f8','#4cf','#c8f','#fff'];
   let mx = 0; for (const n of names) for (const v of dem.depth[n]) mx = Math.max(mx, v); mx = Math.max(mx, 1); const T = dem.t_h[dem.t_h.length-1];
-  g.strokeStyle='#445'; g.strokeRect(30.5,4.5,c.width-36,c.height-24); g.fillStyle='#aab'; g.font='9px sans-serif'; g.fillText(mx.toFixed(0)+' m',2,10); g.fillText('0',20,c.height-20); g.fillText('0 h',30,c.height-8); g.fillText(T.toFixed(0)+' h',c.width-24,c.height-8);
+  g.strokeStyle='#445'; g.strokeRect(30.5,4.5,c.width-36,c.height-24); g.fillStyle='#aab'; g.font='9px sans-serif'; g.fillText(mx.toFixed(0)+' м',2,10); g.fillText('0',20,c.height-20); g.fillText('0 ч',30,c.height-8); g.fillText(T.toFixed(0)+' ч',c.width-24,c.height-8);
   names.forEach((n,k)=>{ g.strokeStyle = cols[k%cols.length]; g.beginPath(); dem.t_h.forEach((t,i)=>{ const x = 30+(c.width-36)*t/T, y = 4+(c.height-24)*(1-dem.depth[n][i]/mx); i?g.lineTo(x,y):g.moveTo(x,y); }); g.stroke(); g.fillStyle = cols[k%cols.length]; g.fillText(n.replace(/_/g,' '), 34, 14+k*10); });
-  document.getElementById('stageNote').textContent = 'Water depth at gauge points vs time (' + floodKey().replace(/_/g,' / ') + ')'; }
+  document.getElementById('stageNote').textContent = 'Глубина потока в контрольных створах по времени (' + floodKey().replace(/_/g,' / ') + ')'; }
 
 const start = DEMS[localStorage.getItem('dem3d')] ? localStorage.getItem('dem3d') : Object.keys(DEMS)[0];
 demsDiv.querySelector(`input[value=${start}]`).checked = true;
