@@ -5,7 +5,9 @@
 [![Physics: SERGHEI + LISFLOOD](https://img.shields.io/badge/Solvers-SERGHEI%202D%20SWE%20%26%20LISFLOOD--FP-orange?style=for-the-badge)](https://charvak-simulation.github.io/)
 
 > 🌐 **Interaktiv 3D Simulyatsiyani ko'rish / View Interactive 3D Simulation / Смотреть интерактивную 3D-модель:**  
-> 👉 **[https://charvak-simulation.github.io/](https://charvak-simulation.github.io/)**
+> 👉 **[https://charvak-simulation.github.io/](https://charvak-simulation.github.io/)**  
+> 📊 **Barcha texnik va gidrologik ma'lumotlar / Full Technical & Hydrological Data / Полные техданные:**  
+> 👉 **[CHARVAK_DATA.md](CHARVAK_DATA.md)**
 
 ---
 
@@ -13,6 +15,7 @@
 1. [🇺🇿 O'zbekcha: To'liq hisobot va tahlil](#-ozbekcha)
 2. [🇷🇺 Русский: Полный отчет и гидродинамический анализ](#-русский)
 3. [🇬🇧 English: Full Hydrodynamic Report & Analysis](#-english)
+4. [📊 Charvak Technical & Hydrological Reference Data (CHARVAK_DATA.md)](CHARVAK_DATA.md)
 
 ---
 
