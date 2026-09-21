@@ -163,10 +163,11 @@ Popular urban myths frequently claim that a Charvak dam failure would submerge t
 
 ---
 
-## 🔍 SEO & Geo Keywords / Qidiruv Kalit So'zlari / Ключевые слова
-* **O'zbekcha (Lotin & Kirill):** Chorvoq suv ombori, Chorvoq to'g'oni yorilishi, Chorvoq toshqini, Toshkent suv toshqini, Chorvoq GES falokati, Bo'stonliq, Chirchiq daryosi, чорвок сув омбори, чорвоқ тошқини, тошкент сув босиши, чорвоқ бўстонлиқ.
-* **Русский:** Прорыв Чарвакской плотины, Чарвакское водохранилище, Чарвакская ГЭС, затопление Ташкента, волна прорыва реки Чирчик, последствия прорыва плотины, Сардоба, Шардара, Бостанлыкский район.
-* **English:** Charvak dam break simulation, Charvak reservoir collapse, Tashkent flood map, Chirchik river inundation, SERGHEI shallow water equations, LISFLOOD-FP dam breach model, Central Asia dam safety.
+## 🔍 Qidiruv Kalit So'zlari va SEO / Ключевые слова и SEO / Keywords
+*Qidiruv tizimlari (Google Web Search, YouTube, Yandex) uchun asosiy kalit so'zlar / Основные поисковые запросы:*
+* **Google Web Search (O'zbekiston / O'zbekcha):** `Chorvoq suv ombori`, `Chorvoq`, `Chorvoq to'g'oni`, `Chorvoq suv sathi`, `Chorvoq xaritasi`, `Chorvoq toshqini`, `Chorvoq to'g'oni yorilishi`, `Toshkent suv toshqini`, `Bo'stonliq tumani`, `чорвок сув омбори`, `чорвоқ тошқини`.
+* **Google Web Search (Узбекистан / Русский):** `Чарвакское водохранилище` (топ-запрос Google Trends), `Чарвак`, `Чарвакская плотина`, `Чарвакская ГЭС`, `уровень воды в Чарваке`, `безопасность Чарвакского водохранилища`, `прорыв плотины Чарвак`, `затопление Ташкента`, `Бостанлыкский район`, `река Чирчик`.
+* **English & Research Queries:** `Charvak Reservoir`, `Charvak Lake`, `Charvak Dam failure simulation`, `Charvak dam break`, `Chirchik river flood map`, `Tashkent flood risk`, `Central Asia dam safety`, `SERGHEI 2D shallow water equations`.
 
 ---
 
